@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "af46c59d-5ad0-4999-98b3-927ec985d16f",
+		"name": "Create Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27679146"
+	},
+	"item": [
+		{
+			"name": "https://gorest.co.in/public/v2/users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "06b988ecb0c5fa22becf2a283c4f9b14c91a27d75145ea5d4a94eac083d3e5e6",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"name\": \"BAU_createTest\",\r\n    \"email\": \"BAU@createTest\",\r\n    \"gender\": \"male\",\r\n    \"status\": \"active\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
